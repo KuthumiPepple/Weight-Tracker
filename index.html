@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Tracker/Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div container1>
+        <header>
+            <h2>Weight Tracker</h2>
+        </header>
+        <p intro>Welcome to Weight Tracker, an app that lets you monitor your weight and BMI.
+            You can also view a chart of your weights over the given period
+        </p>
+        <form>
+            <p>Please enter Your Weights (in kg) into the following fields</p>
+            <div days1-5>
+                <div>
+                    <label for="day-1">Day 1:</label>
+                    <input id="day-1" type="number" min="2" max="635" required>
+                </div>
+
+                <div>
+                    <label for="day-2">Day 2:</label>
+                    <input id="day-2" type="number" min="2" max="635" required>
+                </div>
+
+                <div>
+                    <label for="day-3">Day 3:</label>
+                    <input id="day-3" type="number" min="2" max="635" required>
+                </div>
+
+                <div>
+                    <label for="day-4">Day 4:</label>
+                    <input id="day-4" type="number" min="2" max="635" required>
+                </div>
+
+                <div>
+                    <label for="day-5">Day 5:</label>
+                    <input id="day-5" type="number" min="2" max="635" required>
+                </div>
+            </div>
+            <div days6-10>
+                <div>
+                    <label for="day-6">Day 6:</label>
+                    <input id="day-6" type="number" min="2" max="635" required>
+                </div>
+
+                <div>
+                    <label for="day-7">Day 7:</label>
+                    <input id="day-7" type="number" min="2" max="635" required>
+                </div>
+
+                <div>
+                    <label for="day-8">Day 8:</label>
+                    <input id="day-8" type="number" min="2" max="635" required>
+                </div>
+
+                <div>
+                    <label for="day-9">Day 9:</label>
+                    <input id="day-9" type="number" min="2" max="635" required>
+                </div>
+                <div>
+                    <label for="day-10">Day 10:</label>
+                    <input id="day-10" type="number" min="2" max="635" required>
+                </div>
+            </div>
+            <div height>
+                <p>Please enter your height (in meters) here</p>
+                <label for="height-field">height:</label>
+                <input id="height-field" type="number" min="1" max="3" required>
+            </div>
+            <button submit-btn type="submit">SUBMIT</button>
+            <a chart-btn class="hide" href="view-weight-info.html">Click here to View Chart</a>
+        </form>
+        <footer>
+            <p>Copyright &copy;2019 Weight Tracker</p>
+            <p>All rights reserved</p>
+        </footer>
+    </div>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/processor.js"></script>
+</body>
