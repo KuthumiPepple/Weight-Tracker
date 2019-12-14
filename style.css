@@ -55,11 +55,16 @@ form p{
     grid-column: 1/4;
     box-shadow: 2px 4px 3px darkgray;
 }
-[submit-btn]{
+[reset-btn]{
     grid-row: 9/10;
     grid-column: 5/6;
+    margin-top: 0.5em;
 }
-[chart-btn]{
+[submit-btn]{
+    grid-row: 8/9;
+    grid-column: 5/6;
+}
+#chart-btn{
     grid-row: 8/10;
     grid-column: 6/9;
     background-color: darkgreen;
@@ -113,4 +118,9 @@ footer{
 }
 footer p, form > p{
     margin: 0;
+}
+@media(max-width: 740px){
+    body{
+        font-size: 15px;
+    }
 }
