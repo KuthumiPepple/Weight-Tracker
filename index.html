@@ -8,31 +8,32 @@
 <body>
     <div container1>
         <header>
-            <h2>Weight Tracker</h2>
+            <p>Weight Tracker</p>
         </header>
         <p intro>Welcome to Weight Tracker, an app that lets you monitor your weight and BMI.
             You can also view a chart of your weights over the given period
         </p>
         <form id="myForm" onsubmit="return false;">
-            <p>Please enter Your Weights (in kg) into the following fields</p>
-            <div days1-5>
-                <label>Day 1: <input type="number" min="2" max="635" required></label>
-                <label>Day 2: <input type="number" min="2" max="635" required></label>
-                <label>Day 3: <input type="number" min="2" max="635" required></label>
-                <label>Day 4: <input type="number" min="2" max="635" required></label>
-                <label>Day 5: <input type="number" min="2" max="635" required></label>               
-            </div>
-            <div days6-10>
-                <label>Day 6: <input type="number" min="2" max="635" required></label>
-                <label>Day 7: <input type="number" min="2" max="635" required></label>
-                <label>Day 8: <input type="number" min="2" max="635" required></label>
-                <label>Day 9: <input type="number" min="2" max="635" required></label>
-                <label>Day 10: <input type="number" min="2" max="635" required></label>
-            </div>
-            <div height>
-                <p>Please enter your height (in meters) here</p>
-                <label>height: <input type="number" min="1" max="3" required></label>
-            </div>
+            <p>Please enter Your Weights (in kg) into the following fields below</p>
+            <label for="day1">DAY 1:</label>
+            <input id="day1" type="number" min="2" max="635" required step=".1">
+
+            <label for="day2">DAY 2:</label>
+            <input id="day2" type="number" min="2" max="635" required step=".1">
+
+            <label for="day3">DAY 3:</label>
+            <input id="day3" type="number" min="2" max="635" required step=".1">
+
+            <label for="day4">DAY 4:</label>
+            <input id="day4" type="number" min="2" max="635" required step=".1">
+            
+            <label for="day5">DAY 5:</label>
+            <input id="day5" type="number" min="2" max="635" required step=".1">
+
+            <p>Please enter your height (in meters) in the field below</p>
+            <label for="height">Height:</label>
+            <input id="height" type="number" required min="1" max="3" step=".01">
+
             <input submit-btn type="submit">
             <input reset-btn type="reset">
             <a id="chart-btn" class="hide" href="view-weight-info.html">Click here to View Chart</a>
@@ -42,6 +43,5 @@
             <p>All rights reserved</p>
         </footer>
     </div>
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/processor.js"></script>
+    <script src="js/main.js"></script
 </body>
