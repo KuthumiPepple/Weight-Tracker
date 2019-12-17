@@ -128,8 +128,44 @@ footer{
 footer p, form > p{
     margin: 0;
 }
-@media(max-width: 730px){
+@media(max-width: 720px){
     body{
-        font-size: 15px;
+        font-size: 18px;
+    }
+    [weight-card],[bmi-card]{
+        display: grid;
+    }
+}
+@media(max-width: 500px){
+    [container1]{
+        grid-template: repeat(11, 1fr)/repeat(8, 1fr);
+    }
+    [container2]{
+        max-height: none;
+    }
+    [weight-card] p:nth-child(2), [bmi-card] p:nth-child(2){
+        font-size: 2.5em;
+    }
+    form{
+        grid-row: 3/10;
+        grid-column: 1/9;
+        display: grid;
+        grid-template: repeat(10, 1fr)/ 1fr 2fr;
+        gap: 0.1em;
+        padding: 0.3em;
+        box-shadow: none;
+    }
+    #chart-div{
+        grid-column: 1/9;
+        grid-row: 5/11;
+        padding: 0 1em 0 0.2em;
+    }
+    [bmi-card],[weight-card]{
+        box-shadow: 1px 2px 1.5px teal;
+    }
+}
+@media(max-width: 340px){
+    [weight-card] p:nth-child(2), [bmi-card] p:nth-child(2){
+        font-size: 2em;
     }
 }

@@ -46,13 +46,17 @@ function drawChart() {
 
     data.addRows(chartData);
 
-    var options = {
-    chart: {
-        title: 'Your Weight over a Period of 5 Days'
-    },
-    vAxis:{title: "Your Weight"}
+    const options = {
+        legend: {position: 'none'},
+        chart: {
+            title: 'Your Weight over a Period of 5 Days'
+        },
+        vAxis:{title: "Your Weight"}
     }
-    var chart = new google.charts.Line(document.getElementById('chart-div'));
+    const chart = new google.charts.Line(document.getElementById('chart-div'));
 
     chart.draw(data, google.charts.Line.convertOptions(options));
 }
+window.addEventListener('resize', () => {
+    if(typeof google === 'undefined' || typeof google.visualization === 'undefined') drawChart();
+})
