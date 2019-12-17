@@ -57,6 +57,4 @@ function drawChart() {
 
     chart.draw(data, google.charts.Line.convertOptions(options));
 }
-window.addEventListener('resize', () => {
-    if(typeof google === 'undefined' || typeof google.visualization === 'undefined') drawChart();
-})
+window.addEventListener('orientationchange', () => location.reload(true));

@@ -66,6 +66,9 @@ input{
     grid-column: 2/3;
     width: 100%;
 }
+[type=number]{
+    font-size: 1em;
+}
 [submit-btn],[reset-btn]{
     grid-column: 1/2;
 }
